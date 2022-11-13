@@ -93,12 +93,6 @@ class Model_Nhanvien {
 
 
 
-
-    public function getStudentDetail($stid){
-        $allStudent = $this->getAllNhanvien();
-        return $allStudent[$stid];
-    }
-
 }
 
 ?>
