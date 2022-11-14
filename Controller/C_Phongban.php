@@ -3,7 +3,7 @@
     
     include_once("../Model/Nhanvien/M_Nhanvien.php");
     include_once("../Model/Phongban/M_Phongban.php");
-    class Ctrl_Nhanvien{
+    class Ctrl_Phongban{
 
         public function check(){
             $check = (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true);
@@ -46,6 +46,6 @@
             }
         }
     };
-    $C_Nhanvien = new Ctrl_Nhanvien();
-    $C_Nhanvien->invoke();
+    $C_Phongban = new Ctrl_Phongban();
+    $C_Phongban->invoke();
 ?>
